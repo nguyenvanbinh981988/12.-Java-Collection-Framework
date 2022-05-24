@@ -1,4 +1,7 @@
+package Sd_HashMap_LinkedHashMap_TreeMap;
+
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -21,5 +24,14 @@ public class TestMap {
         tree.put("Cook", 29);
         System.out.println("Display entries in ascending order of key");
         System.out.println(tree);
+
+
+        Map<String,Integer> linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put("Smith",30);
+        linkedHashMap.put("Anderson", 31);
+        linkedHashMap.put("Lewis", 29);
+        linkedHashMap.put("Cook", 29);
+        System.out.println("\nThe age for " + "Lewis is " + linkedHashMap.get("Lewis"));
+        System.out.println(linkedHashMap);
     }
 }
